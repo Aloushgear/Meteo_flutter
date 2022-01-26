@@ -655,13 +655,11 @@ class Retourne extends StatelessWidget {
                       Navigator.push(context,
                         MaterialPageRoute(builder: (context) => NavView(
                         )));
-
-                      
                     },
-                    style: ElevatedButton.styleFrom(
-                      fixedSize: const Size(20,20),
-                      primary: Colors.white,
-                      elevation: 5,
+                    style: ElevatedButton.styleFrom(shape: new
+                      RoundedRectangleBorder(
+                      borderRadius: new BorderRadius.circular(30.30),
+                      ),
                     ),
                   ),
                      )
