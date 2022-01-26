@@ -25,19 +25,6 @@ class _ConvexAppExampleState extends State<ConvexAppExample> {
       length: 5,
       initialIndex: 2,
       child: Scaffold(
-        /*body: Column(
-          children: [
-            _buildStyleSelector(),
-            const Divider(),
-            Expanded(
-              child: TabBarView(
-                children: [
-                  for (final icon in _kPages.values) Icon(icon, size: 64),
-                ],
-              ),
-            ),
-          ],
-        ),*/
         bottomNavigationBar: ConvexAppBar.badge(
           // Optional badge argument: keys are tab indices, values can be
           // String, IconData, Color or Widget.
