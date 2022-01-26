@@ -1,3 +1,5 @@
+//Recupération des données de l'API
+
 class Weather{
 
   final String main;
