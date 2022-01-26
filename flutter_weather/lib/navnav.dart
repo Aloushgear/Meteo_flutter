@@ -29,6 +29,8 @@ class _NavViewState extends State<NavView> {
   @override
   Widget build(BuildContext context) {
     
+//Zone de SlimeCard
+    
     return Scaffold(
         body: Container(
       decoration: BoxDecoration(
@@ -162,6 +164,11 @@ class _NavViewState extends State<NavView> {
     );
   }
 }
+
+//Fin Zone SlimCard
+
+
+//Condition sur les temps 
 
 class Retourne extends StatelessWidget {
   final String a;
@@ -599,9 +606,12 @@ class Retourne extends StatelessWidget {
     );
   }
 
+ //Fin condition sur les temps 
+
   Widget weatherBox(Weather _weather,BuildContext context) {
 
-
+//Action pour la visualisation des informations sur les différentes villes
+    
     return Scaffold(
       body: AnnotatedRegion<SystemUiOverlayStyle>(
         value: SystemUiOverlayStyle.light,
@@ -893,6 +903,9 @@ class Retourne extends StatelessWidget {
       ),
     );  
 }
+  
+ //Test avec API pour récupérer les infos
+  
   Future getCurrentWeather( ) async {
     Weather weather;
     String city = "London";
