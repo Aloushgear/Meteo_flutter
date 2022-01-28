@@ -29,7 +29,6 @@ class _NavViewState extends State<NavView> {
   @override
   Widget build(BuildContext context) {
     
-//Zone de SlimeCard
     
     return Scaffold(
         body: Container(
@@ -165,11 +164,6 @@ class _NavViewState extends State<NavView> {
   }
 }
 
-//Fin Zone SlimCard
-
-
-//Condition sur les temps 
-
 class Retourne extends StatelessWidget {
   final String a;
   const Retourne({Key? key, required this.a}) : super(key: key);
@@ -180,10 +174,12 @@ class Retourne extends StatelessWidget {
     switch (desc) {
       case "Drizzle":
         DateTime now=DateTime.now();
-        DateTime dt2 = DateTime.parse("2018-02-27 19:00");
+        DateTime dt2 = DateTime.parse("2018-02-27 18:00");
         String st1=DateFormat('kk').format(dt2);
         String format = DateFormat('kk').format(now);
-        if(format.compareTo(st1)<19){
+        var one = int.parse(st1);
+        var two = int.parse(format);
+        if(two>one){
           
           return Container(
           child:
@@ -193,7 +189,7 @@ class Retourne extends StatelessWidget {
           ),
         );
         }
-        else if(format.compareTo(st1)>19){
+        else if(two<one){
            
            return Container(
           child:
@@ -209,10 +205,12 @@ class Retourne extends StatelessWidget {
     
       case "Rain":
         DateTime now=DateTime.now();
-        DateTime dt2 = DateTime.parse("2018-02-27 19:00");
+        DateTime dt2 = DateTime.parse("2018-02-27 18:00");
         String st1=DateFormat('kk').format(dt2);
         String format = DateFormat('kk').format(now);
-        if(format.compareTo(st1)<19){
+        var one = int.parse(st1);
+        var two = int.parse(format);
+        if(two>one){
           
           return Container(
           child:
@@ -222,7 +220,7 @@ class Retourne extends StatelessWidget {
           ),
         );
         }
-        else if(format.compareTo(st1)>19){
+        else if(two<one){
            return Container(
           child:
            Image.asset(
@@ -237,10 +235,12 @@ class Retourne extends StatelessWidget {
         );
         case "Snow":
         DateTime now=DateTime.now();
-        DateTime dt2 = DateTime.parse("2018-02-27 19:00");
+        DateTime dt2 = DateTime.parse("2018-02-27 18:00");
         String st1=DateFormat('kk').format(dt2);
         String format = DateFormat('kk').format(now);
-        if(format.compareTo(st1)<19){
+        var one = int.parse(st1);
+        var two = int.parse(format);
+        if(two>one){
           
           return Container(
           child:
@@ -250,7 +250,7 @@ class Retourne extends StatelessWidget {
           ),
         );
         }
-        else if(format.compareTo(st1)>19){
+        else if(two<one){
            
            return Container(
           child:
@@ -265,10 +265,12 @@ class Retourne extends StatelessWidget {
         );
         case "Clear":
         DateTime now=DateTime.now();
-        DateTime dt2 = DateTime.parse("2018-02-27 19:00");
+        DateTime dt2 = DateTime.parse("2018-02-27 18:00");
         String st1=DateFormat('kk').format(dt2);
         String format = DateFormat('kk').format(now);
-        if(format.compareTo(st1)<19){
+        var one = int.parse(st1);
+        var two = int.parse(format);
+        if(two>one){
           
           return Container(
           child:
@@ -278,7 +280,7 @@ class Retourne extends StatelessWidget {
           ),
         );
         }
-        else if(format.compareTo(st1)>19){
+        else if(two<one){
            
            return Container(
           child:
@@ -293,10 +295,12 @@ class Retourne extends StatelessWidget {
         );
         case "Thunderstorm":
         DateTime now=DateTime.now();
-        DateTime dt2 = DateTime.parse("2018-02-27 19:00");
+        DateTime dt2 = DateTime.parse("2018-02-27 18:00");
         String st1=DateFormat('kk').format(dt2);
         String format = DateFormat('kk').format(now);
-        if(format.compareTo(st1)<19){
+        var one = int.parse(st1);
+        var two = int.parse(format);
+        if(two>one){
           
           return Container(
           child:
@@ -306,7 +310,7 @@ class Retourne extends StatelessWidget {
           ),
         );
         }
-        else if(format.compareTo(st1)>19){
+        else if(two<one){
            
            return Container(
           child:
@@ -321,11 +325,12 @@ class Retourne extends StatelessWidget {
         );
       case "Clouds":
         DateTime now=DateTime.now();
-        DateTime dt2 = DateTime.parse("2018-02-27 19:00");
+        DateTime dt2 = DateTime.parse("2018-02-27 18:00");
         String st1=DateFormat('kk').format(dt2);
         String format = DateFormat('kk').format(now);
-        if(format.compareTo(st1)<19){
-          
+        var one = int.parse(st1);
+        var two = int.parse(format);
+        if(two>one){
           return Container(
           child:
            Image.asset(
@@ -334,12 +339,12 @@ class Retourne extends StatelessWidget {
           ),
         );
         }
-        else if(format.compareTo(st1)>19){
+        else if(two<one){
            
            return Container(
           child:
            Image.asset(
-            'assets/img/27.png',
+            'assets/img/80.png',
             height: 180,
           ),
         );
@@ -349,10 +354,12 @@ class Retourne extends StatelessWidget {
         );
         case "Haze":
         DateTime now=DateTime.now();
-        DateTime dt2 = DateTime.parse("2018-02-27 19:00");
+        DateTime dt2 = DateTime.parse("2018-02-27 18:00");
         String st1=DateFormat('kk').format(dt2);
         String format = DateFormat('kk').format(now);
-        if(format.compareTo(st1)<19){
+        var one = int.parse(st1);
+        var two = int.parse(format);
+        if(two>one){
           
           return Container(
           child:
@@ -362,7 +369,7 @@ class Retourne extends StatelessWidget {
           ),
         );
         }
-        else if(format.compareTo(st1)>19){
+        else if(two<one){
            
            return Container(
           child:
@@ -377,10 +384,12 @@ class Retourne extends StatelessWidget {
         );
         case "Mist":
         DateTime now=DateTime.now();
-        DateTime dt2 = DateTime.parse("2018-02-27 19:00");
+        DateTime dt2 = DateTime.parse("2018-02-27 18:00");
         String st1=DateFormat('kk').format(dt2);
         String format = DateFormat('kk').format(now);
-        if(format.compareTo(st1)<19){
+        var one = int.parse(st1);
+        var two = int.parse(format);
+        if(two>one){
           
           return Container(
           child:
@@ -390,7 +399,7 @@ class Retourne extends StatelessWidget {
           ),
         );
         }
-        else if(format.compareTo(st1)>19){
+        else if(two<one){
            
            return Container(
           child:
@@ -412,10 +421,12 @@ class Retourne extends StatelessWidget {
         );
         case "Dust":
        DateTime now=DateTime.now();
-        DateTime dt2 = DateTime.parse("2018-02-27 19:00");
+        DateTime dt2 = DateTime.parse("2018-02-27 18:00");
         String st1=DateFormat('kk').format(dt2);
         String format = DateFormat('kk').format(now);
-        if(format.compareTo(st1)<19){
+        var one = int.parse(st1);
+        var two = int.parse(format);
+        if(two>one){
           
           return Container(
           child:
@@ -425,7 +436,7 @@ class Retourne extends StatelessWidget {
           ),
         );
         }
-        else if(format.compareTo(st1)>19){
+        else if(two<one){
            
            return Container(
           child:
@@ -440,10 +451,12 @@ class Retourne extends StatelessWidget {
         );
         case "Fog":
        DateTime now=DateTime.now();
-        DateTime dt2 = DateTime.parse("2018-02-27 19:00");
+        DateTime dt2 = DateTime.parse("2018-02-27 18:00");
         String st1=DateFormat('kk').format(dt2);
         String format = DateFormat('kk').format(now);
-        if(format.compareTo(st1)<19){
+        var one = int.parse(st1);
+        var two = int.parse(format);
+        if(two>one){
           
           return Container(
           child:
@@ -453,7 +466,7 @@ class Retourne extends StatelessWidget {
           ),
         );
         }
-        else if(format.compareTo(st1)>19){
+        else if(two<one){
            
            return Container(
           child:
@@ -468,10 +481,12 @@ class Retourne extends StatelessWidget {
         );
         case "Sand":
         DateTime now=DateTime.now();
-        DateTime dt2 = DateTime.parse("2018-02-27 19:00");
+        DateTime dt2 = DateTime.parse("2018-02-27 18:00");
         String st1=DateFormat('kk').format(dt2);
         String format = DateFormat('kk').format(now);
-        if(format.compareTo(st1)<19){
+        var one = int.parse(st1);
+        var two = int.parse(format);
+        if(two>one){
           
           return Container(
           child:
@@ -481,7 +496,7 @@ class Retourne extends StatelessWidget {
           ),
         );
         }
-        else if(format.compareTo(st1)>19){
+        else if(two<one){
            
            return Container(
           child:
@@ -496,10 +511,12 @@ class Retourne extends StatelessWidget {
         );
         case "Ash":
        DateTime now=DateTime.now();
-        DateTime dt2 = DateTime.parse("2018-02-27 19:00");
+        DateTime dt2 = DateTime.parse("2018-02-27 18:00");
         String st1=DateFormat('kk').format(dt2);
         String format = DateFormat('kk').format(now);
-        if(format.compareTo(st1)<19){
+        var one = int.parse(st1);
+        var two = int.parse(format);
+        if(two>one){
           
           return Container(
           child:
@@ -509,7 +526,7 @@ class Retourne extends StatelessWidget {
           ),
         );
         }
-        else if(format.compareTo(st1)>19){
+        else if(two<one){
            
            return Container(
           child:
@@ -524,10 +541,12 @@ class Retourne extends StatelessWidget {
         );
         case "Squall":
         DateTime now=DateTime.now();
-        DateTime dt2 = DateTime.parse("2018-02-27 19:00");
+        DateTime dt2 = DateTime.parse("2018-02-27 18:00");
         String st1=DateFormat('kk').format(dt2);
         String format = DateFormat('kk').format(now);
-        if(format.compareTo(st1)<19){
+        var one = int.parse(st1);
+        var two = int.parse(format);
+        if(two>one){
           
           return Container(
           child:
@@ -537,7 +556,7 @@ class Retourne extends StatelessWidget {
           ),
         );
         }
-        else if(format.compareTo(st1)>19){
+        else if(two<one){
            
            return Container(
           child:
@@ -552,10 +571,12 @@ class Retourne extends StatelessWidget {
         );
         case "Tomado":
         DateTime now=DateTime.now();
-        DateTime dt2 = DateTime.parse("2018-02-27 19:00");
+        DateTime dt2 = DateTime.parse("2018-02-27 18:00");
         String st1=DateFormat('kk').format(dt2);
         String format = DateFormat('kk').format(now);
-        if(format.compareTo(st1)<19){
+        var one = int.parse(st1);
+        var two = int.parse(format);
+        if(two>one){
           
           return Container(
           child:
@@ -565,7 +586,7 @@ class Retourne extends StatelessWidget {
           ),
         );
         }
-        else if(format.compareTo(st1)>19){
+        else if(two<one){
            
            return Container(
           child:
@@ -606,12 +627,9 @@ class Retourne extends StatelessWidget {
     );
   }
 
- //Fin condition sur les temps 
-
   Widget weatherBox(Weather _weather,BuildContext context) {
 
-//Action pour la visualisation des informations sur les différentes villes
-    
+
     return Scaffold(
       body: AnnotatedRegion<SystemUiOverlayStyle>(
         value: SystemUiOverlayStyle.light,
@@ -635,30 +653,31 @@ class Retourne extends StatelessWidget {
                 children: <Widget>[
                   Container(
                     padding: EdgeInsets.only(top: 30),
-                     margin: EdgeInsets.only(top: 32,left: 15),
+                    margin: EdgeInsets.only(top: 32,left: 15),
                     child:
                     
                     
                     Align(
                       alignment:Alignment.bottomLeft,
                       child:
-
-                    ElevatedButton(
-                        
                     
+                    ElevatedButton(  
                     child:
-                    const Icon(Icons.arrow_back),
-                    
-                    
+                    const Icon(Icons.arrow_back),  
                     onPressed: () {
-
                       Navigator.push(context,
                         MaterialPageRoute(builder: (context) => NavView(
                         )));
+
+                      
                     },
                     style: ElevatedButton.styleFrom(shape: new
+                     /* fixedSize: const Size(20,20),
+                      primary: Colors.white,
+                      elevation: 5,*/
                       RoundedRectangleBorder(
                       borderRadius: new BorderRadius.circular(30.30),
+                      
                       ),
                     ),
                   ),
@@ -901,12 +920,8 @@ class Retourne extends StatelessWidget {
       ),
     );  
 }
-  
- //Test avec API pour récupérer les infos
-  
   Future getCurrentWeather( ) async {
     Weather weather;
-    String city = "London";
     String apikey ="f22d6da9dac96102fd7c57b6a813b2b9";
     var url = "https://api.openweathermap.org/data/2.5/weather?q=$a&units=metric&lang=fr&cnt=8&appid=$apikey";
     final response =await http.get(url);
